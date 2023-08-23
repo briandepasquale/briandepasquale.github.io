@@ -83,8 +83,8 @@ author:
   name             : "Brian DePasquale"
   avatar           : "profile.png"
   bio              : "Assistant Professor | Department of Biomedical Engineering | Boston University"
-  location         : "Boston, MA,"
-  employer         : "Boston University"
+  location         : "Boston, MA"
+  employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=brian+depasquale"
   googlescholar    : "https://scholar.google.com/citations?user=dkRSv1AAAAAJ&hl=en"
   email            : "bddepasq@bu.edu"

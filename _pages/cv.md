@@ -33,9 +33,9 @@ Professional Organizations / Service
 
 Honors
 ======
-* 2010| National Science Foundation Graduate Research Fellowship
-* 2005| Victor F. Hess Award (top Fordham U. graduating physics student)
-* 2004| National Science Foundation REU summer student (UCSD, physics)
+* 2010, National Science Foundation Graduate Research Fellowship
+* 2005,  Victor F. Hess Award (top Fordham U. graduating physics student)
+* 2004, National Science Foundation REU summer student (UCSD, physics)
 
 Science Writing
 ======
