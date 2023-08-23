@@ -83,7 +83,7 @@ author:
   name             : "Brian DePasquale"
   avatar           : "profile.png"
   bio              : "Assistant Professor | Department of Biomedical Engineering | Boston University"
-  mylocation       : Room 413, 44 Cummington Mall <br> i class="fa fa-fw fa-map-marker" style="color:white"></i>Boston, MA, 02215
+  mylocation       : Room 413, 44 Cummington Mall <br> <i class="fa fa-fw fa-map-marker" style="color:white"></i>Boston, MA, 02215
   location         : 
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=brian+depasquale"
