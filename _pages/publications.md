@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-* [Building functional networks of spiking model neurons](https://www.nature.com/articles/nn.4241) \\
+* [The centrality of population-level factors to network computation is demonstrated by a versatile approach for training spiking networks](https://doi.org/10.1016/j.neuron.2022.12.007) \\
 DePasquale, B, Sussillo, D., Abbott, L.F., Churchland, M.M. (2023) \\
 in press at Neuron
 * [Neural population dynamics underlying evidence accumulation in multiple rat brain regions](https://doi.org/10.1101/2021.10.28.465122) \\
@@ -20,7 +20,7 @@ bioRxiv
 Pinto, L., Rajan, K., DePasquale, B., Thiberge, S.Y., Tank, D.W., Brody, C.D. (2019) \\
  Neuron, 104(4), 810-824. e9
 * [full-FORCE: A target-based method for training recurrent networks]("https://doi.org/10.1371/journal.pone.0191527")
-{<a href="https://github.com/briandepasquale/full-FORCE-demos" style="text-decoration: none"><i class="fab fa-github"></i> code</a>} \\
+<a href="https://github.com/briandepasquale/full-FORCE-demos" style="text-decoration: none"><i class="fab fa-github"></i> code</a> \\
 DePasquale, B., Cueva, C.J., Rajan, K., Escola, G.S. & Abbott, L.F. (2018) \\
 PLoS One 13(2): e0191527
 * [Error-correcting dynamics in visual working memory](https://www.nature.com/articles/s41467-019-11298-3) \\ 
