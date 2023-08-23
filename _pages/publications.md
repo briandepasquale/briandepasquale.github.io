@@ -23,10 +23,10 @@ Pinto, L., Rajan, K., DePasquale, B., Thiberge, S.Y., Tank, D.W., Brody, C.D. (2
 <a href="https://github.com/briandepasquale/full-FORCE-demos" style="text-decoration: none"><i class="fab fa-github"></i> code</a> \\
 DePasquale, B., Cueva, C.J., Rajan, K., Escola, G.S. & Abbott, L.F. (2018) \\
 PLoS One 13(2): e0191527
-* [Error-correcting dynamics in visual working memory](https://www.nature.com/articles/s41467-019-11298-3) \\ 
+* [Error-correcting dynamics in visual working memory](https://www.nature.com/articles/s41467-019-11298-3) \\
 Panichello, M.F., DePasquale, B., Pillow, J.W. & Buschman, T.J. (2018) \\
 Nature Communications 10, Article number: 3366
-* [Building functional networks of spiking model neurons](https://www.nature.com/articles/nn.4241) \\ 
+* [Building functional networks of spiking model neurons](https://www.nature.com/articles/nn.4241) \\
 Abbott, L.F., DePasquale, B., Memmesheimer, R.-M. (2016) \\
 Nature Neuroscience 19:350-355
 
