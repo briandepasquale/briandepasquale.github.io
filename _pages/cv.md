@@ -14,18 +14,25 @@ Boston University \\
 (617) 353-2816 \\
 Room 413, 44 Cummington Mall, Boston, MA, 02215
 
-Positions and Employment 
+Academic Appointments
 ======
 * 2023-present, Assistant Professor, Biomedical Engineering, Boston University, MA, USA
+* 2023-present, Faculty Member, Hariri Institute for Computing, Boston University, Boston, MA
 * 2023-present, Faculty Member, Center for Systems Neuroscience, Boston University, Boston, MA
 * 2023-present, Faculty Member, Neurophotonics Center, Boston University, Boston, MA
 * 2016-2022, Postdoctoral Fellow, [Princeton Neuroscience Institute](https://pni.princeton.edu/), Princeton, NJ
-* 2009-2016, PhD student, [Center for Theoretical Neuroscience](https://ctn.zuckermaninstitute.columbia.edu/) Columbia University, New York, NY
 * 2005-2009, Research Assistant, Brain and Cognitive Sciences, MIT, Cambridge, MA
 
-Professional Organizations / Service 
+Education
 ======
-* 2012-present, Journal reviewer: Nature Machine Intelligence, NeurIPS, eLife, Neural Computation, PNAS, PLoS Computational Biology, Science Advances, ICLR, Neurons, Behavior, Data analysis and Theory, COSYNE (Conference), Computational Cognitive Neuroscience (Conference)
+* 2009-2016, PhD Neurobiology & Behavior, Columbia University, New York, NY
+* 2005, BS Physics, Fordham University, Bronx, NY
+
+Professional Activity 
+======
+* 2024, Program Committee, Cosyne
+* 2024, Organizer BU Neurophotonics symposium
+* 2012-present, Journal reviewer: Nature Machine Intelligence, NeurIPS, Nature, Neuroscience, eLife, Neural Computation, PNAS, PLoS Computational Biology, Science Advances, ICLR, Cosyne (Conference), Computational Cognitive Neuroscience (Conference)
 * 2021, 2022, Teaching assistant, COSYNE tutorial in computational neuroscience
 * 2019-2020, Seminar series committee, Princeton Neuroscience Institute
 * 2017-2022, Science writer, Simons Foundation, Collaboration on the Global Brain 
@@ -34,8 +41,17 @@ Professional Organizations / Service
 Honors
 ======
 * 2010, National Science Foundation Graduate Research Fellowship
-* 2005,  Victor F. Hess Award (top Fordham U. graduating physics student)
+* 2005, Victor F. Hess Award (top Fordham U. graduating physics student)
 * 2004, National Science Foundation REU summer student (UCSD, physics)
+
+Invited Talks
+======
+* Invited speaker, Kempner Institute Machine Learning Foundations Seminar, Harvard, May 2024
+* Invited speaker, Organization for Computational Neuroscience (OCNS), 2023. Leipzig, Germany Constructing spiking networks as a foundation for the theory of manifolds as computational substrate. https://cns2023.sched.com/ 
+* DePasquale, B. (2023). The centrality of population-level factors to network computation is demonstrated by a versatile approach for training spiking networks. In Spiking neural networks as universal function approximators (SNUFA). Online. https://www.world-wide.org/Neuro-Informatics/SNUFA/ 
+* Boston University, Department of Biomedical Engineering, 2022
+* Cold Spring Harbor Laboratory, 2021
+* Champalimaud Centre for the Unknown, 2021
 
 Science Writing
 ======
