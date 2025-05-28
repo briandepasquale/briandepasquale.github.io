@@ -14,7 +14,7 @@ author_profile: true
 
 2024 
 ======
-* May: Kempner Institute [Learning the Language of Smell: Foundation Models for Protein-Odor Interactions](https://www.youtube.com/watch?v=lW6M7wlhNiw). 
+* May: Kempner Institute [Constructing Spiking Networks as a Foundation for the Theory of Manifolds as Computational Substrate](https://www.youtube.com/watch?v=lW6M7wlhNiw). 
 
 2023 
 ======
