@@ -35,6 +35,7 @@ Rules:
 - `master` is protected. Make a branch, open a PR, and Brian merges. Never push to `master`, force-push, or rewrite history unless Brian asks in words. If something sensitive was published, tell Brian. It takes more than deleting a file (GitHub keeps copies of merged pull requests).
 - Branch names start with an underscore and name the topic (`_gatsby-talk`). Delete the branch after its PR merges.
 - With the GitHub CLI, always pass `--repo briandepasquale/briandepasquale.github.io`.
-- There is no PR preview on this site. Preview locally (see README) or check the live site after a merge. GitHub Pages can take 10 to 20 minutes to update and browsers may cache for 10 minutes, so hard-refresh before concluding a change did not work.
+- Every PR gets a live preview. A comment on the PR links to `/preview/pr-N/`. Check it before merging. After a merge, the live site can take about 10 minutes to update and browsers may cache for 10 minutes, so hard-refresh before concluding a change did not work.
+- `gh-pages` is written only by the workflows. Never edit it by hand.
 - Keep notes about private sources in files ending `.local.md`. They are git-ignored through `.git/info/exclude`. Check `git status` before every commit and stage named paths, not whole folders.
 - Local-only notes, PDFs from private folders, and anything marked confidential never go in the repo.
