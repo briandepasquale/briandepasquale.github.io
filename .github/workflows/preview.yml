@@ -1,0 +1,55 @@
+name: preview
+run-name: build preview for pull request
+
+# Builds the site for every pull request and publishes it to the gh-pages
+# branch under /preview/pr-N/. A comment on the PR links to it. The preview is
+# removed when the PR closes.
+
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+# a new push to a PR cancels the stale preview build for that PR
+concurrency:
+  group: preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-preview:
+    # only build PRs from this repository
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Install Ruby packages
+        if: github.event.action != 'closed'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Build preview version of site
+        if: github.event.action != 'closed'
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build --baseurl "/preview/pr-${{ github.event.number }}"
+
+      - name: Publish preview to gh-pages
+        uses: rossjrw/pr-preview-action@v1.4.7
+        with:
+          source-dir: _site
+          umbrella-dir: preview
