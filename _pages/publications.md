@@ -7,6 +7,14 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+details.year { text-align: left; }
+details.year > summary { font-size: 1.5rem; font-weight: 600; cursor: pointer; margin: 1em 0 0.4em; text-align: left; }
+</style>
+
+<details class="year" open markdown="1">
+<summary>2026</summary>
+
 * [Striatum-wide dopamine encodes trajectory errors separated from value](https://doi.org/10.1038/s41586-025-10083-1) \\
 Brown, E.H., Zi, Y., Vu, M.-A.T., Bouabid, S., Lindsey, J.W., Godfrey-Nwachukwu, C., Attarwala, A., Litwin-Kumar, A., **DePasquale, B.**, Howe, M.W. (2026) \\
 Nature 652(8109): 424
@@ -28,6 +36,12 @@ bioRxiv
 * [Low rank adaptation of chemical foundation models generates effective odorant representations](https://doi.org/10.1101/2025.11.04.686628) \\
 McConachie, G.D., Duniec, E., Guerina, F.V., Younger, M.A., **DePasquale, B.** (2026) \\
 International Conference on Learning Representations (ICLR) 2026; preprint on bioRxiv
+
+</details>
+
+<details class="year" markdown="1">
+<summary>2025</summary>
+
 * [StateSpaceDynamics.jl: A Julia package for probabilistic state space models (SSMs)](https://doi.org/10.21105/joss.08077) \\
 Senne, R.A., Loschinskey, Z., Fourie, J., Loughridge, C., **DePasquale, B.** (2025) \\
 Journal of Open Source Software 10(115): 8077
@@ -37,12 +51,30 @@ Nature 646(8087): 1156
 * [A state-dependent drift diffusion model reveals mice actively explore a speed-accuracy continuum during decision-making](https://doi.org/10.1101/2025.06.02.657156) \\
 Senne, R.A., Delgado-Sallent, C., Ramirez, S., Scott, B.B., **DePasquale, B.** (2025) \\
 bioRxiv
+
+</details>
+
+<details class="year" markdown="1">
+<summary>2024</summary>
+
 * [Neural population dynamics underlying evidence accumulation in multiple rat brain regions](https://doi.org/10.7554/eLife.84955) \\
 **DePasquale, B.**, Brody, C.D., Pillow, J. (2024) \\
 eLife 13: e84955
+
+</details>
+
+<details class="year" markdown="1">
+<summary>2023</summary>
+
 * [The centrality of population-level factors to network computation is demonstrated by a versatile approach for training spiking networks](https://doi.org/10.1016/j.neuron.2022.12.007) \\
 **DePasquale, B.**, Sussillo, D., Abbott, L.F., Churchland, M.M. (2023) \\
 Neuron 111(5): 631-649.e10
+
+</details>
+
+<details class="year" markdown="1">
+<summary>Prior to 2023</summary>
+
 * [Recurrent dynamics of prefrontal cortex during context-dependent decision-making](https://doi.org/10.1101/2020.11.27.401539) \\
 Cohen, Z., **DePasquale, B.**, Aoi, M., Pillow, J. (2020) \\
 bioRxiv
@@ -59,5 +91,7 @@ PLoS One 13(2): e0191527
 * [Building functional networks of spiking model neurons](https://www.nature.com/articles/nn.4241) \\
 Abbott, L.F., **DePasquale, B.**, Memmesheimer, R.-M. (2016) \\
 Nature Neuroscience 19: 350-355
+
+</details>
 
 For a full list of publications, see [Brian's Google Scholar](https://scholar.google.com/citations?user=dkRSv1AAAAAJ&hl=en).
