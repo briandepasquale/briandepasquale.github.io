@@ -10,10 +10,10 @@ It is a [Jekyll](https://jekyllrb.com) site built from the [academicpages](https
 
 ## How changes get to the site
 
-1. `master` is protected. Nothing is pushed to it directly. Every change goes through a pull request (PR). No approval is required, so you can merge your own PR.
+1. `master` is protected. Nothing is pushed to it directly. Every change goes through a pull request (PR). No approval is required, so you can merge your own PR once the preview looks right.
 2. Make a branch from `master`, edit files, push the branch, and open a PR.
-3. There is no automatic preview. Preview locally if you want to (see below), or check the live site after merging.
-4. When the PR is merged, GitHub Pages rebuilds and publishes the site, usually within 10 to 20 minutes.
+3. GitHub builds a **live preview** of your branch. A comment on the PR links to it, at `https://briandepasquale.github.io/preview/pr-<number>/`. Check it before merging. The preview is removed when the PR closes.
+4. When the PR is merged, the `deploy` workflow rebuilds the site and publishes it to the `gh-pages` branch, which GitHub Pages serves. The live site usually updates within 10 minutes.
 
 See [CONVENTIONS.md](CONVENTIONS.md) for what may be published and how we edit. `CLAUDE.md` points AI assistants at it.
 
@@ -29,10 +29,13 @@ See [CONVENTIONS.md](CONVENTIONS.md) for what may be published and how we edit. 
 | `_data/` | Navigation menu and UI text. |
 | `_includes/`, `_layouts/`, `_sass/`, `assets/` | The template's building blocks. You normally do not touch these. |
 | `markdown_generator/`, `talkmap*` | Optional template tools for generating entries from a spreadsheet and mapping talks. |
+| `.github/workflows/` | `preview.yml` builds PR previews, `deploy.yml` publishes the live site to `gh-pages`. |
 | `CONVENTIONS.md`, `CLAUDE.md` | How we want the site edited. |
 | `CHANGELOG.md`, `CONTRIBUTING.md` | Left over from the template. They are about the upstream project, not this site. |
 
-## Previewing on your own computer
+## Previewing on your own computer (optional)
+
+Most people can skip this and use the PR preview.
 
 1. Install Ruby and Bundler.
 2. Run `bundle install`. If you get errors, delete `Gemfile.lock` and try again.

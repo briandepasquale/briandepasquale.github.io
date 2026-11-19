@@ -1,0 +1,50 @@
+name: deploy
+run-name: deploy site from master
+
+# Builds the live site from master and publishes it to the gh-pages branch.
+# GitHub Pages serves gh-pages. Do not edit gh-pages by hand.
+
+on:
+  push:
+    branches:
+      - master
+
+  # run if user manually requests it
+  workflow_dispatch:
+
+# queue deploys instead of running them at the same time
+concurrency:
+  group: deploy-site
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v4
+
+      - name: Install Ruby packages
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Build live site
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build
+
+      # the site is already built, so tell GitHub Pages not to run Jekyll again
+      - name: Add .nojekyll
+        run: touch _site/.nojekyll
+
+      - name: Publish to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        with:
+          folder: _site
+          clean-exclude: preview
+          force: false
