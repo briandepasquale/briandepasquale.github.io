@@ -31,12 +31,12 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      # not needed when the PR closes (the branch may already be deleted)
-      - name: Checkout PR branch
-        if: github.event.action != 'closed'
+      # the preview action needs a git checkout to remove a preview. When the PR
+      # closes its branch may already be deleted, so check out master instead.
+      - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: ${{ github.event.action == 'closed' && 'master' || github.head_ref }}
 
       - name: Install Ruby packages
         if: github.event.action != 'closed'
