@@ -1,31 +1,48 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# [Brian DePasquale](https://briandepasquale.github.io)
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Source for the personal website of Brian DePasquale, Assistant Professor of Biomedical Engineering at Boston University: **https://briandepasquale.github.io**
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+For the lab, see the [DePasquale Lab website](https://depasquale-lab.github.io).
 
-# Instructions
+It is a [Jekyll](https://jekyllrb.com) site built from the [academicpages](https://github.com/academicpages/academicpages.github.io) template (itself based on the [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme, MIT license, see `LICENSE`) and hosted on GitHub Pages. Almost everything is a Markdown file.
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+**Last updated:** November 19, 2026 (repository organization). For the latest change, check the [commit history](https://github.com/briandepasquale/briandepasquale.github.io/commits/master). If you make a substantial content update, please bump this date.
 
-See more info at https://academicpages.github.io/
+## How changes get to the site
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+1. `master` is protected. Nothing is pushed to it directly. Every change goes through a pull request (PR). No approval is required, so you can merge your own PR.
+2. Make a branch from `master`, edit files, push the branch, and open a PR.
+3. There is no automatic preview. Preview locally if you want to (see below), or check the live site after merging.
+4. When the PR is merged, GitHub Pages rebuilds and publishes the site, usually within 10 to 20 minutes.
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+See [CONVENTIONS.md](CONVENTIONS.md) for what may be published and how we edit. `CLAUDE.md` points AI assistants at it.
 
-# Changelog -- bugfixes and enhancements
+## What's inside
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+| Path | What it is |
+|---|---|
+| `_pages/` | The main pages: about, CV, publications, talks, teaching, news. |
+| `_publications/`, `_talks/`, `_teaching/`, `_posts/`, `_portfolio/` | One Markdown file per entry. |
+| `files/` | PDFs and other downloads, served at `/files/<name>`. |
+| `images/` | Photos and figures. |
+| `_config.yml` | Site title, author profile, social links and Jekyll settings. |
+| `_data/` | Navigation menu and UI text. |
+| `_includes/`, `_layouts/`, `_sass/`, `assets/` | The template's building blocks. You normally do not touch these. |
+| `markdown_generator/`, `talkmap*` | Optional template tools for generating entries from a spreadsheet and mapping talks. |
+| `CONVENTIONS.md`, `CLAUDE.md` | How we want the site edited. |
+| `CHANGELOG.md`, `CONTRIBUTING.md` | Left over from the template. They are about the upstream project, not this site. |
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+## Previewing on your own computer
+
+1. Install Ruby and Bundler.
+2. Run `bundle install`. If you get errors, delete `Gemfile.lock` and try again.
+3. Run `bundle exec jekyll serve` and open http://localhost:4000.
+
+## Good to know
+
+- `_config.yml` has `future: true`, so entries dated in the future are published. Remove stale placeholder entries rather than leaving them in the collections.
+- `README.md`, `CONVENTIONS.md` and `CLAUDE.md` are excluded from the website.
+
+## Credits
+
+Built with the [academicpages](https://github.com/academicpages/academicpages.github.io) template, by Stuart Geiger and contributors, forked from Minimal Mistakes, copyright 2016 Michael Rose, MIT license.
