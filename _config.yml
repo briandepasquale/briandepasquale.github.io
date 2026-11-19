@@ -131,7 +131,6 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - CHANGELOG
   - CLAUDE.md
   - CONVENTIONS.md
   - README.md
