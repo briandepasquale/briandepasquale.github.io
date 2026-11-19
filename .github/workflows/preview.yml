@@ -31,7 +31,9 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
+      # not needed when the PR closes (the branch may already be deleted)
       - name: Checkout PR branch
+        if: github.event.action != 'closed'
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
