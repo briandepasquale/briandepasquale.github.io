@@ -31,7 +31,6 @@ See [CONVENTIONS.md](CONVENTIONS.md) for what may be published and how we edit. 
 | `markdown_generator/`, `talkmap*` | Optional template tools for generating entries from a spreadsheet and mapping talks. |
 | `.github/workflows/` | `preview.yml` builds PR previews, `deploy.yml` publishes the live site to `gh-pages`. |
 | `CONVENTIONS.md`, `CLAUDE.md` | How we want the site edited. |
-| `CHANGELOG.md`, `CONTRIBUTING.md` | Left over from the template. They are about the upstream project, not this site. |
 
 ## Previewing on your own computer (optional)
 
@@ -43,7 +42,8 @@ Most people can skip this and use the PR preview.
 
 ## Good to know
 
-- `_config.yml` has `future: true`, so entries dated in the future are published. Remove stale placeholder entries rather than leaving them in the collections.
+- The Publications, Talks, Teaching and News pages are hand-written Markdown in `_pages/`. The `_publications`, `_talks`, `_teaching` and `_posts` collections are not used by those pages.
+- `_config.yml` has `future: true`, so entries dated in the future are published.
 - `README.md`, `CONVENTIONS.md` and `CLAUDE.md` are excluded from the website.
 
 ## Credits
